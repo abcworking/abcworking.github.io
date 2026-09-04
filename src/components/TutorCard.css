@@ -1,0 +1,80 @@
+.tutor-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.tutor-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--paper);
+  box-shadow: 0 0 0 2px var(--line);
+}
+
+.tutor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.tutor-name {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.tutor-subjects {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.subject-pill {
+  background: color-mix(in srgb, var(--pill-color) 16%, white);
+  color: color-mix(in srgb, var(--pill-color) 70%, black);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.tutor-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+}
+
+.meta-item dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-bottom: 2px;
+}
+
+.meta-item dd {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .tutor-card {
+    flex-wrap: wrap;
+  }
+
+  .tutor-card .btn-book {
+    width: 100%;
+    order: 3;
+  }
+}

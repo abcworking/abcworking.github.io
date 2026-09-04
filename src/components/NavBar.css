@@ -1,0 +1,33 @@
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.navbar-logo-mark {
+  background: var(--coral);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+}
+
+.navbar-logo-word {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--ink);
+}
