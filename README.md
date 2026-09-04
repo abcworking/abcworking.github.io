@@ -4,13 +4,6 @@ A prototype tutoring marketplace site: React (Vite), fully static, built to
 run on GitHub Pages. There is no backend — tutor data is a static list and
 bookings are saved to the browser's `localStorage` only.
 
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
 Runs at abcworking.github.io.
 
 ## PostHog telemetry
